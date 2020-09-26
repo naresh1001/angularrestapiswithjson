@@ -1,0 +1,25 @@
+<div>
+    <form action="" #userForm="ngForm" (ngSubmit)="doRegister(userForm.value)">
+        <div class="form-group" >
+            <input type="text" class="form-control" required name="username" placeholder="Enter Name" ngModel
+            #username="ngModel">
+         <small class="error" *ngIf="username.invalid && username.touched">Username is required</small>   
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" required pattern="^\d{10}$" name="mobile" placeholder="Mobile No" ngModel
+            #mobile="ngModel">
+          <div *ngIf="mobile.invalid && mobile.touched">
+             <small class="error" *ngIf="mobile.errors.required">Mobile No is Required</small>
+             <small class="error" *ngIf="mobile.errors.pattern">10 digit no is required</small>
+          </div>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Email" ngModel>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="address" placeholder="Address" ngModel>
+        </div>
+       <br>
+       <button class="btn btn-info" type="submit">Register</button>
+    </form>
+</div>
