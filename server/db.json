@@ -1,11 +1,25 @@
 {
   "users": [
     {
-      "username": "naresh.chandra",
+      "username": "Naresh Chandra",
       "mobile": 9953839784,
       "email": "naresh.mmmec@gmail.com",
       "address": "3h 228 Rakesh Marg Nehru Nagar",
       "id": 1
+    },
+    {
+      "username": "Sanchit Patel",
+      "mobile": 9953839784,
+      "email": "naresh.mmmec@gmail.com",
+      "address": "3h 228 Rakesh Marg Nehru Nagar",
+      "id": 2
+    },
+    {
+      "username": "Raaj",
+      "mobile": 9953839784,
+      "email": "naresh.mmmec@gmail.com",
+      "address": "3h 228 Rakesh Marg Nehru Nagar",
+      "id": 3
     }
   ]
 }
