@@ -1,0 +1,23 @@
+<p>userslist works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Username</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of allUsers">
+        <th scope="row">{{ user.id }}</th>
+        <td>{{ user.username}}</td>
+        <td>{{ user.mobile }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.address}}</td>
+        <td><button class="btn btn-warning" (click)="editUser(user)">Edit</button> </td>
+        <td><button class="btn btn-danger" (click)="deleteMe(user)">Delete</button></td>
+      </tr>
+   </tbody>
+   </table>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RegisterService } from '../register.service';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registeruser',
@@ -19,7 +19,7 @@ export class RegisteruserComponent implements OnInit {
     id:''
   }
 
-  constructor(private registerService:RegisterService) { }
+  constructor(private registerService:RegisterService, private router:Router) { }
 
   ngOnInit() {
     this.getAllUsers();
@@ -28,7 +28,8 @@ export class RegisteruserComponent implements OnInit {
     //console.log(user);
     this.registerService.createUser(user).subscribe((response)=>{
       console.log("value Inserted");
-      this.getAllUsers(); 
+      this.router.navigate(["/userlist"]);
+     // this.getAllUsers(); 
     })
   }
   getAllUsers(){
@@ -36,22 +37,6 @@ export class RegisteruserComponent implements OnInit {
      this.allUsers=response;
    }) 
   }
-  deleteMe(user){
-    this.registerService.deleteUser(user).subscribe((response)=>{
-    this.getAllUsers(); 
-    })
-  }
-  editUser(user){
-    this.isEdit=true;
-    this.userObj=user;
-  }  
-  updateUser(userForm){
-    this.isEdit =!this.isEdit;
-    this.registerService.updateUser(this.userObj).subscribe((response)=>{
-      this.getAllUsers();
-      userForm.reset();
-  })
-  
-  }
+
 
 }

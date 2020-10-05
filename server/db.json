@@ -20,6 +20,41 @@
       "email": "naresh.mmmec@gmail.com",
       "address": "3h 228 Rakesh Marg Nehru Nagar",
       "id": 3
+    },
+    {
+      "username": "Arush Patel",
+      "mobile": 3534654657,
+      "email": "naresh.mmmec@gmail.com",
+      "address": "3h 228 Rakesh Marg Nehru Nagar",
+      "id": 4
+    },
+    {
+      "username": "Rajat",
+      "mobile": 6589969909,
+      "email": "naresh.mmmec@gmail.com",
+      "address": "3h 228 Rakesh Marg Nehru Nagar",
+      "id": 5
+    },
+    {
+      "username": "Sumit",
+      "mobile": 3453467890,
+      "email": "naresh.mmmec@gmail.com",
+      "address": "3h 228 Rakesh Marg Nehru Nagar",
+      "id": 6
+    },
+    {
+      "username": "Amit Goyal",
+      "mobile": 9876543456,
+      "email": "naresh.mmmec@gmail.com",
+      "address": "3h 228 Rakesh Marg Nehru Nagar",
+      "id": 7
+    },
+    {
+      "username": "Amit Goyal",
+      "mobile": 9876543456,
+      "email": "naresh.mmmec@gmail.com",
+      "address": "3h 228 Rakesh Marg Nehru Nagar",
+      "id": 8
     }
   ]
 }
