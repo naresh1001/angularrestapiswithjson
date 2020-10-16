@@ -1,0 +1,27 @@
+<p>updateuser works!</p>
+
+<div>
+    <form action="" #userForm="ngForm">
+        <div class="form-group" >
+            <input type="text" class="form-control" required name="username" placeholder="Enter Name" [(ngModel)]="userObj.username"
+            #username="ngModel">
+         <small class="error" *ngIf="username.invalid && username.touched">Username is required</small>   
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" required pattern="^\d{10}$" name="mobile" placeholder="Mobile No" [(ngModel)]="userObj.mobile"
+            #mobile="ngModel">
+          <div *ngIf="mobile.invalid && mobile.touched">
+             <small class="error" *ngIf="mobile.errors.required">Mobile No is Required</small>
+             <small class="error" *ngIf="mobile.errors.pattern">10 digit no is required</small>
+          </div>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Email" [(ngModel)]="userObj.email">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="address" placeholder="Address" [(ngModel)]="userObj.address">
+        </div>
+       <br>
+              <button class="btn btn-info" type="submit" (click)="updateUser(userForm)" >Update</button>
+    </form>
+</div>

@@ -17,6 +17,10 @@ export class RegisterService {
  deleteUser(user){
   return this._http.delete("http://localhost:3000/users/"+user.id);
  }
+ getUser(id){
+  return this._http.get("http://localhost:3000/users/"+id);
+ }
+
  updateUser(user){
   return this._http.put("http://localhost:3000/users/" +user.id,user)
 }
